@@ -14,6 +14,7 @@
 		B6E5C56227107405006EE444 /* MadLibsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C56027107405006EE444 /* MadLibsApp.xcdatamodeld */; };
 		B6E5C56427107407006EE444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E5C56327107407006EE444 /* Assets.xcassets */; };
 		B6E5C56727107407006EE444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E5C56527107407006EE444 /* LaunchScreen.storyboard */; };
+		B6E5C56F2710743F006EE444 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C56E2710743F006EE444 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B6E5C56327107407006EE444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E5C56627107407006EE444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E5C56827107407006EE444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E5C56E2710743F006EE444 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				B6E5C55927107405006EE444 /* SceneDelegate.swift */,
 				B6E5C55B27107405006EE444 /* ViewController.swift */,
 				B6E5C55D27107405006EE444 /* Main.storyboard */,
+				B6E5C56E2710743F006EE444 /* SecondViewController.swift */,
 				B6E5C56327107407006EE444 /* Assets.xcassets */,
 				B6E5C56527107407006EE444 /* LaunchScreen.storyboard */,
 				B6E5C56827107407006EE444 /* Info.plist */,
@@ -143,6 +146,7 @@
 				B6E5C56227107405006EE444 /* MadLibsApp.xcdatamodeld in Sources */,
 				B6E5C55C27107405006EE444 /* ViewController.swift in Sources */,
 				B6E5C55827107405006EE444 /* AppDelegate.swift in Sources */,
+				B6E5C56F2710743F006EE444 /* SecondViewController.swift in Sources */,
 				B6E5C55A27107405006EE444 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
