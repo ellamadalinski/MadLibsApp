@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B69A7B4A2715BEC7006E0901 /* BasketballVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A7B492715BEC7006E0901 /* BasketballVC.swift */; };
+		B69A7B4C2715BF76006E0901 /* SoccerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A7B4B2715BF76006E0901 /* SoccerVC.swift */; };
+		B69A7B4E2715BFB0006E0901 /* BaseballVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A7B4D2715BFB0006E0901 /* BaseballVC.swift */; };
+		B69A7B502715C00B006E0901 /* FootballVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A7B4F2715C00B006E0901 /* FootballVC.swift */; };
 		B6E5C55827107405006EE444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C55727107405006EE444 /* AppDelegate.swift */; };
 		B6E5C55A27107405006EE444 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C55927107405006EE444 /* SceneDelegate.swift */; };
 		B6E5C55C27107405006EE444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C55B27107405006EE444 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B69A7B492715BEC7006E0901 /* BasketballVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballVC.swift; sourceTree = "<group>"; };
+		B69A7B4B2715BF76006E0901 /* SoccerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVC.swift; sourceTree = "<group>"; };
+		B69A7B4D2715BFB0006E0901 /* BaseballVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballVC.swift; sourceTree = "<group>"; };
+		B69A7B4F2715C00B006E0901 /* FootballVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballVC.swift; sourceTree = "<group>"; };
 		B6E5C55427107405006EE444 /* MadLibsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C55727107405006EE444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6E5C55927107405006EE444 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 				B6E5C55927107405006EE444 /* SceneDelegate.swift */,
 				B6E5C55B27107405006EE444 /* ViewController.swift */,
 				B6E5C55D27107405006EE444 /* Main.storyboard */,
+				B69A7B4F2715C00B006E0901 /* FootballVC.swift */,
+				B69A7B4D2715BFB0006E0901 /* BaseballVC.swift */,
+				B69A7B4B2715BF76006E0901 /* SoccerVC.swift */,
+				B69A7B492715BEC7006E0901 /* BasketballVC.swift */,
 				B6E5C56E2710743F006EE444 /* SecondViewController.swift */,
 				B6E5C56327107407006EE444 /* Assets.xcassets */,
 				B6E5C56527107407006EE444 /* LaunchScreen.storyboard */,
@@ -145,9 +157,13 @@
 			files = (
 				B6E5C56227107405006EE444 /* MadLibsApp.xcdatamodeld in Sources */,
 				B6E5C55C27107405006EE444 /* ViewController.swift in Sources */,
+				B69A7B4E2715BFB0006E0901 /* BaseballVC.swift in Sources */,
+				B69A7B4C2715BF76006E0901 /* SoccerVC.swift in Sources */,
 				B6E5C55827107405006EE444 /* AppDelegate.swift in Sources */,
 				B6E5C56F2710743F006EE444 /* SecondViewController.swift in Sources */,
 				B6E5C55A27107405006EE444 /* SceneDelegate.swift in Sources */,
+				B69A7B4A2715BEC7006E0901 /* BasketballVC.swift in Sources */,
+				B69A7B502715C00B006E0901 /* FootballVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

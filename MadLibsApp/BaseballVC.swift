@@ -1,20 +1,17 @@
 //
-//  SecondViewController.swift
+//  BaseballVC.swift
 //  MadLibsApp
 //
-//  Created by ELLA MADALINSKI on 10/8/21.
+//  Created by ELLA MADALINSKI on 10/12/21.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class BaseballVC: UIViewController {
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
     
