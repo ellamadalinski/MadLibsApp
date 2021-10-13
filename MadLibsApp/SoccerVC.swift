@@ -10,10 +10,11 @@ import UIKit
 class SoccerVC: UIViewController {
 
     var toPrint : String!
+    @IBOutlet weak var textViewOutlet: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textViewOutlet.text = "\(toPrint)"
         // Do any additional setup after loading the view.
     }
     

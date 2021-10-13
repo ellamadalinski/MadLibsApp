@@ -19,22 +19,22 @@ public class MadLib{
         adjective = a
     }
     
-    func createBasketballMadLibs (_ n : String, _ v : String, _ a : String)-> String{
-        return "0"
+    func createBasketballMadLibs ()-> String{
+        return "Johnny \(verb) and dribbled to the hoop, but was stopped by a/an \(noun). In order to make the basket, he decided to jumup over the \(noun), resulting in Johnny \(adjective) and the \(noun) falling over."
         
     }
     
-    func createSoccerMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+    func createSoccerMadLibs ()-> String{
         return "1"
         
     }
     
-    func createBaseballMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+    func createBaseballMadLibs ()-> String{
         return "2"
         
     }
     
-    func createFootballMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+    func createFootballMadLibs ()-> String{
         return "3"
         
     }

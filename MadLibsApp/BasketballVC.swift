@@ -10,9 +10,12 @@ import UIKit
 class BasketballVC: UIViewController {
 
     var toPrint : String!
+    @IBOutlet weak var textFieldOutlet: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textFieldOutlet.text = toPrint
 
         // Do any additional setup after loading the view.
     }

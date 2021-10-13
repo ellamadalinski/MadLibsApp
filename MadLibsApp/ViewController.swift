@@ -38,36 +38,40 @@ class ViewController: UIViewController {
             
             switch segControlOutlet.selectedSegmentIndex {
             case 0:
+                madLibsString = creation.createBasketballMadLibs()
                 performSegue(withIdentifier: "toBasketballVC", sender: nil)
                 //print("0")
-                madLibsString = creation.createBasketballMadLibs(noun, verb, adjective)
             case 1:
+                madLibsString = creation.createSoccerMadLibs()
                 performSegue(withIdentifier: "toSoccerVC", sender: nil)
                 //print("1")
-                madLibsString = creation.createSoccerMadLibs(noun, verb, adjective)
             case 2:
+                madLibsString = creation.createBaseballMadLibs()
                 performSegue(withIdentifier: "toBaseballVC", sender: nil)
                 //print("2")
-                madLibsString = creation.createBaseballMadLibs(noun, verb, adjective)
             case 3:
+                madLibsString = creation.createFootballMadLibs()
                 performSegue(withIdentifier: "toFootballVC", sender: nil)
                 //print("3")
-                madLibsString = creation.createFootballMadLibs(noun, verb, adjective)
             case 4:
                 let num = Int.random(in: 1...4)
                 switch num {
                 case 1:
+                    madLibsString = creation.createBasketballMadLibs()
                     performSegue(withIdentifier: "toBasketballVC", sender: nil)
-                    madLibsString = creation.createBasketballMadLibs(noun, verb, adjective)
+                    
                 case 2:
+                    madLibsString = creation.createSoccerMadLibs()
                     performSegue(withIdentifier: "toSoccerVC", sender: nil)
-                    madLibsString = creation.createSoccerMadLibs(noun, verb, adjective)
+                    
                 case 3:
+                    madLibsString = creation.createBaseballMadLibs()
                     performSegue(withIdentifier: "toBaseballVC", sender: nil)
-                    madLibsString = creation.createBaseballMadLibs(noun, verb, adjective)
+                    
                 case 4:
+                    madLibsString = creation.createFootballMadLibs()
                     performSegue(withIdentifier: "toFootballVC", sender: nil)
-                    madLibsString = creation.createFootballMadLibs(noun, verb, adjective)
+                    
                 default:
                     print("no")
                 }
@@ -77,17 +81,21 @@ class ViewController: UIViewController {
                 let num = Int.random(in: 1...4)
                 switch num {
                 case 1:
+                    madLibsString = creation.createBasketballMadLibs()
                     performSegue(withIdentifier: "toBasketballVC", sender: nil)
-                    madLibsString = creation.createBasketballMadLibs(noun, verb, adjective)
+                    
                 case 2:
+                    madLibsString = creation.createSoccerMadLibs()
                     performSegue(withIdentifier: "toSoccerVC", sender: nil)
-                    madLibsString = creation.createSoccerMadLibs(noun, verb, adjective)
+                    
                 case 3:
+                    madLibsString = creation.createBaseballMadLibs()
                     performSegue(withIdentifier: "toBaseballVC", sender: nil)
-                    madLibsString = creation.createBaseballMadLibs(noun, verb, adjective)
+                    
                 case 4:
+                    madLibsString = creation.createFootballMadLibs()
                     performSegue(withIdentifier: "toFootballVC", sender: nil)
-                    madLibsString = creation.createFootballMadLibs(noun, verb, adjective)
+                    
                 default:
                     print("no")
                 }
@@ -95,7 +103,10 @@ class ViewController: UIViewController {
             }
         }
         else{
-            //alert
+            let alert = UIAlertController(title: "Error", message: "1+ Text Feilds Not Filled Out", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
         }
         
         
@@ -120,7 +131,8 @@ class ViewController: UIViewController {
             let nvc3 = segue.destination as! FootballVC
             nvc3.toPrint = madLibsString
         }
-
+        
+        
     }
     
 }
