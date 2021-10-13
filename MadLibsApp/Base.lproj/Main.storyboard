@@ -17,11 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="madLibs" translatesAutoresizingMaskIntoConstraints="NO" id="N6V-hn-Vqf">
-                                <rect key="frame" x="54" y="217" width="283" height="263"/>
+                                <rect key="frame" x="54" y="113" width="283" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8DG-FI-s20">
+                                <rect key="frame" x="147" y="430" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-wV-Cfj">
+                                <rect key="frame" x="147" y="472" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-12-X5x">
+                                <rect key="frame" x="147" y="514" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="79W-Kx-rNq">
-                                <rect key="frame" x="8" y="551" width="374" height="32"/>
+                                <rect key="frame" x="8" y="595" width="374" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Basketball"/>
@@ -31,17 +49,39 @@
                                     <segment title="Random"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCX-Vk-cjV">
+                                <rect key="frame" x="65" y="672" width="261" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Click to View Mad Libs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXb-1d-wOd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.58770915119686884" green="1" blue="0.28845534500746461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="osi-M4-r3Z"/>
+                    <connections>
+                        <outlet property="adjectiveTextField" destination="1hd-12-X5x" id="tdw-YQ-Zp9"/>
+                        <outlet property="nounTextField" destination="8DG-FI-s20" id="db9-Yl-5Uu"/>
+                        <outlet property="segControlOutlet" destination="79W-Kx-rNq" id="FSE-UG-LUJ"/>
+                        <outlet property="verbTextField" destination="Gst-wV-Cfj" id="7K6-lc-ci9"/>
+                        <segue destination="hhT-1y-P71" kind="show" identifier="toBasketballVC" id="cE7-Wm-foQ"/>
+                        <segue destination="1sY-L9-oAx" kind="show" identifier="toSoccerVC" id="Enn-oi-PIt"/>
+                        <segue destination="Qa1-F0-eU6" kind="show" identifier="toBaseballVC" id="jM5-7N-mXz"/>
+                        <segue destination="20w-Q5-3aw" kind="show" identifier="toFootballVC" id="zQn-Cl-srn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1064.6153846153845" y="93.127962085308056"/>
         </scene>
-        <!--FootballVC-->
+        <!--Football-->
         <scene sceneID="QLp-18-CH4">
             <objects>
                 <viewController id="20w-Q5-3aw" customClass="FootballVC" customModule="MadLibsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,12 +91,13 @@
                         <viewLayoutGuide key="safeArea" id="n7W-oq-HCa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Football" id="562-zc-FHO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oG-42-BT4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837" y="-858"/>
+            <point key="canvasLocation" x="2131" y="-858"/>
         </scene>
-        <!--BasketballVC-->
+        <!--Basketball-->
         <scene sceneID="kOg-s7-nt8">
             <objects>
                 <viewController id="hhT-1y-P71" customClass="BasketballVC" customModule="MadLibsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,13 +107,13 @@
                         <viewLayoutGuide key="safeArea" id="gSX-6D-PXi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0RD-Vr-VLG"/>
+                    <navigationItem key="navigationItem" title="Basketball" id="0RD-Vr-VLG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEd-SP-FXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-408" y="-858"/>
+            <point key="canvasLocation" x="23" y="-858"/>
         </scene>
-        <!--SoccerVC-->
+        <!--Soccer-->
         <scene sceneID="kzc-bR-e1r">
             <objects>
                 <viewController id="1sY-L9-oAx" customClass="SoccerVC" customModule="MadLibsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,12 +123,13 @@
                         <viewLayoutGuide key="safeArea" id="QuN-w2-z4t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Soccer" id="T8B-1e-bnI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzr-df-q9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-858"/>
+            <point key="canvasLocation" x="725" y="-858"/>
         </scene>
-        <!--BaseballVC-->
+        <!--Baseball-->
         <scene sceneID="y84-4w-gVp">
             <objects>
                 <viewController id="Qa1-F0-eU6" customClass="BaseballVC" customModule="MadLibsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,10 +139,11 @@
                         <viewLayoutGuide key="safeArea" id="XRp-mA-mch"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Baseball" id="dZR-Q6-BJk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaW-ot-ggV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="-858"/>
+            <point key="canvasLocation" x="1429" y="-858"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f8C-kT-Mld">
