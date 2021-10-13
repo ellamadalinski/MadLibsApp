@@ -12,16 +12,32 @@ public class MadLib{
     var noun : String
     var verb : String
     var adjective : String
-    var type : Int
     
-    init(n : String, v : String, a : String, t : Int){
+    init(n : String, v : String, a : String){
         noun = n
         verb = v
         adjective = a
-        type = t
     }
     
+    func createBasketballMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+        return "0"
+        
+    }
     
+    func createSoccerMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+        return "1"
+        
+    }
+    
+    func createBaseballMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+        return "2"
+        
+    }
+    
+    func createFootballMadLibs (_ n : String, _ v : String, _ a : String)-> String{
+        return "3"
+        
+    }
     
     
 }

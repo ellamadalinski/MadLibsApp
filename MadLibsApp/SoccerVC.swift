@@ -9,6 +9,8 @@ import UIKit
 
 class SoccerVC: UIViewController {
 
+    var toPrint : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
