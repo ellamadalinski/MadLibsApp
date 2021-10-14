@@ -115,19 +115,19 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.description == "toBasketballVC"{
+        if segue.identifier == "toBasketballVC"{
             let nvc0 = segue.destination as! BasketballVC
             nvc0.toPrint = madLibsString
         }
-        else if segue.description == "toSoccerVC"{
+        else if segue.identifier == "toSoccerVC"{
             let nvc1 = segue.destination as! SoccerVC
             nvc1.toPrint = madLibsString
         }
-        else if segue.description == "toBaseballVC"{
+        else if segue.identifier == "toBaseballVC"{
             let nvc2 = segue.destination as! BaseballVC
             nvc2.toPrint = madLibsString
         }
-        else if segue.description == "toFootballVC"{
+        else if segue.identifier == "toFootballVC"{
             let nvc3 = segue.destination as! FootballVC
             nvc3.toPrint = madLibsString
         }

@@ -14,7 +14,7 @@ class SoccerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textViewOutlet.text = "\(toPrint)"
+        textViewOutlet.text = toPrint
         // Do any additional setup after loading the view.
     }
     
