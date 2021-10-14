@@ -103,7 +103,7 @@ class ViewController: UIViewController {
             }
         }
         else{
-            let alert = UIAlertController(title: "Error", message: "1+ Text Feilds Not Filled Out", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "1+ Text Fields Not Filled Out", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
